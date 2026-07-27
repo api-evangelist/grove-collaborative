@@ -1,0 +1,24 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.grove.co/.well-known/
+host: https://www.grove.co
+note: >-
+  grove.co is a Shopify-hosted storefront. The OIDC / OAuth authorization-server
+  discovery documents below are Shopify's Customer Account API surface (issuer
+  https://shopify.com/authentication/88468160824), served under the grove.co
+  domain. They are Shopify platform infrastructure, not a first-party Grove API.
+  Notably scopes_supported advertises customer-account-mcp-api:full (Shopify's
+  Customer Account MCP API).
+documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: grove-collaborative-openid-configuration.json
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: grove-collaborative-oauth-authorization-server.json
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404

@@ -1,8 +1,17 @@
 aid: grove-collaborative
 name: Grove Collaborative
-description: Grove Collaborative is a company surfaced as a portfolio company of 500-global, bullpen-capital
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Grove Collaborative is a digital-first consumer products company and online
+  marketplace for sustainable everyday household essentials — eco-friendly
+  cleaning supplies, bamboo and recycled paper products, personal care, beauty,
+  pet, and vitamins & supplements from hundreds of vetted brands. Orders meet
+  strict ingredient standards and are carbon neutral, and the company operates as
+  a plastic-neutral, sustainability-focused retailer sold through grove.co (a
+  Shopify-hosted storefront) and retail partners. Grove is a public benefit
+  company (NYSE: GROV) that was an early portfolio company of 500 Global and
+  Bullpen Capital. It publishes no first-party developer API or public developer
+  program; this profile captures its public web, security, and Shopify-platform
+  discovery surface.
 url: https://raw.githubusercontent.com/api-evangelist/grove-collaborative/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,11 +20,29 @@ x-backed-by:
 - bullpen-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.grove.co/cdn/shop/files/Grove-Meta_Preview.jpg?v=1773877757
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Consumer Products
+- E-commerce
+- Sustainability
+- Household Products
+- Personal Care
+- Retail
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +52,22 @@ maintainers:
 common:
 - type: Website
   url: https://grove.co
+- type: Blog
+  url: https://www.grove.co/blog/
+- type: Support
+  url: https://community.grove.co/hc/en-us/
+- type: Login
+  url: https://www.grove.co/account
+- type: TermsOfService
+  url: https://www.grove.co/policies/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.grove.co/policies/privacy-policy
+- type: WellKnown
+  url: well-known/grove-collaborative-well-known.yml
+- type: DomainSecurity
+  url: security/grove-collaborative-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
