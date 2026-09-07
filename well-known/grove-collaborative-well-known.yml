@@ -2,14 +2,14 @@ generated: '2026-07-19'
 method: searched
 source: https://www.grove.co/.well-known/
 host: https://www.grove.co
-note: >-
-  grove.co is a Shopify-hosted storefront. The OIDC / OAuth authorization-server
-  discovery documents below are Shopify's Customer Account API surface (issuer
-  https://shopify.com/authentication/88468160824), served under the grove.co
-  domain. They are Shopify platform infrastructure, not a first-party Grove API.
-  Notably scopes_supported advertises customer-account-mcp-api:full (Shopify's
-  Customer Account MCP API).
-documents:
+note: grove.co is a Shopify-hosted storefront. The OIDC / OAuth authorization-server discovery documents
+  below are Shopify's Customer Account API surface (issuer https://shopify.com/authentication/88468160824),
+  served under the grove.co domain. They are Shopify platform infrastructure, not a first-party Grove
+  API. Notably scopes_supported advertises customer-account-mcp-api:full (Shopify's Customer Account MCP
+  API).
+hosts:
+- host: https://www.grove.co
+  documents:
   - path: /.well-known/openid-configuration
     status: 200
     file: grove-collaborative-openid-configuration.json
@@ -22,3 +22,8 @@ documents:
     status: 404
   - path: /.well-known/ai-plugin.json
     status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
